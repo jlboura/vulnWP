@@ -18,7 +18,7 @@ The vulnerable wordpress server could run in :
 ### Install thanks vagrant  
 ```
 sudo apt install vagrant
-git clone https://github.com/jossets/WordpressVuln
+git clone https://github.com/jlboura/vulnWP
 vagrant up
 ```
 
